@@ -3,9 +3,8 @@ import React from 'react';
 import { RiNotificationSnoozeLine } from "react-icons/ri";
 import { FiArchive } from "react-icons/fi";
 import { RiDeleteBinLine } from "react-icons/ri";
-import { FiPhoneCall } from "react-icons/fi";
-import { MdOutlineTextsms } from "react-icons/md";
-import { IoVideocamOutline } from "react-icons/io5";
+
+import InterActionsBtn from '@/components/InterActionsBtn/InterActionsBtn';
 
 
 const FriendDetailsPage = async ({ params }) => {
@@ -17,7 +16,7 @@ const FriendDetailsPage = async ({ params }) => {
 
     const friend = friendsData.find((friend) => friend.id === Number(friendId))
 
-    console.log(friend)
+    // console.log(friend)
 
     const { name, picture, days_since_contact, bio, status, tags, email, goal, next_due_date } = friend;
 
@@ -124,32 +123,9 @@ const FriendDetailsPage = async ({ params }) => {
 
                     <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
                         <h3 className="text-lg font-semibold text-green-900 mb-6">Quick Check-In</h3>
-                        <div className="grid grid-cols-3 gap-4">
-                            {/* Call Button */}
-                            <button className="bg-gray-50 p-4 rounded-xl border border-transparent hover:shadow-xl flex flex-col items-center justify-center
-             gap-2">
-                                <span className="text-2xl"><FiPhoneCall />
-                                </span>
-                                <span className="text-xl">Call</span>
-                            </button>
 
-
-                            <button className="bg-gray-50 p-4 rounded-xl border border-transparent hover:shadow-xl flex flex-col items-center justify-center
-             gap-2">
-                                <span className="text-2xl"><MdOutlineTextsms />
-
-                                </span>
-                                <span className="text-xl">Text</span>
-                            </button>
-
-                            <button className="bg-gray-50 p-4 rounded-xl border border-transparent hover:shadow-xl flex flex-col items-center justify-center
-             gap-2">
-                                <span className="text-2xl"><IoVideocamOutline />
-                                </span>
-                                <span className="text-xl">Video</span>
-                            </button>
-
-                        </div>
+                      <InterActionsBtn friend={friend} ></InterActionsBtn>
+                        
                     </div>
 
                 </div>

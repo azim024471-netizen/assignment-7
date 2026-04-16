@@ -1,12 +1,14 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const FriendCard = ({ friend }) => {
-    const { name, picture, days_since_contact, status, tags } = friend;
+    const { name, picture, days_since_contact, status, tags , id } = friend;
 
     
 
     return (
-        <div className="bg-white rounded-lg p-6 shadow-sm flex flex-col items-center text-center border border-gray-100">
+        <Link href={`/${id}`}  >
+        <div className="bg-white rounded-lg p-6 hover:shadow-olive-500 hover:bg-green-50 shadow-sm flex flex-col items-center text-center border border-gray-100">
             
             <Image src={picture} 
                 alt={name}
@@ -42,6 +44,8 @@ const FriendCard = ({ friend }) => {
             </div>
 
         </div>
+
+        </Link>
     );
 };
 
