@@ -8,7 +8,12 @@ const FriendCard = ({ friend }) => {
     return (
         <div className="bg-white rounded-lg p-6 shadow-sm flex flex-col items-center text-center border border-gray-100">
             
-            
+            <Image src={picture} 
+                alt={name}
+                width={80}
+                height={80}
+                className=" rounded-full object-cover mb-4 border-2 border-gray-100"> 
+                </Image>
             
             <div className="space-y-2">
                 <h4 className="text-[20px] font-semibold ">{name}</h4>
