@@ -25,7 +25,6 @@ const FriendDetailsPage = async ({ params }) => {
         <div className='flex flex-col md:flex-row container mx-auto py-20 items-center justify-center gap-6 '>
 
 
-
             <div className="flex flex-col gap-4">
 
                 <div className="bg-white p-6  rounded-lg shadow-sm text-center border
@@ -81,11 +80,6 @@ const FriendDetailsPage = async ({ params }) => {
                     </button>
                 </div>
             </div>
-
-
-
-
-
             <div>
 
 
@@ -138,6 +132,7 @@ const FriendDetailsPage = async ({ params }) => {
 };
 
 export default FriendDetailsPage;
+
 
 
 
