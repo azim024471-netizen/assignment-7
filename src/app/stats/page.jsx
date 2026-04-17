@@ -24,7 +24,7 @@ const StatsPage = () => {
     return (
         <div className='container mx-auto p-10 bg-white '>
 
-              <h1 className='text-5xl   mb-8 '> This is stats page</h1>
+              <h1 className='sm:text-5xl text-3xl font-semibold  mb-8 '> This is stats page</h1>
 
               <div className='shadow-sm bg-green-50 p-7 rounded-xs'>
 

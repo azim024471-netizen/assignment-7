@@ -15,7 +15,7 @@ const Banner = () => {
         <div className='container mx-auto  '>
             <div className='text-center  '>
                 <div className=' space-y-4 mb-8'>
-                    <h2 className='font-bold text-5xl'>Friends to keep close in your life</h2>
+                    <h2 className='font-bold text-3xl sm:text-5xl'>Friends to keep close in your life</h2>
                     <p className='text-gray-500'>Your personal shelf of meaningful connections. Browse, tend, and nurture the
                         relationships that matter most.</p>
                 </div>

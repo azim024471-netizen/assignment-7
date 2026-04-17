@@ -34,7 +34,7 @@ const NavBar = () => {
         <div className="w-full border-b-white bg-gray-100">
             <div className=" mx-auto max-w-14/16 py-4 flex items-center justify-between">
 
-                <h1 className="text-4xl ">
+                <h1 className="sm:text-4xl text-2xl ">
                     <span className='font-extrabold'>Keen</span><span className="text-green-900 font-semibold">Keeper</span>
                 </h1> 
                 
@@ -48,10 +48,10 @@ const NavBar = () => {
               <Link
                 href={nav.path}
                 key={index}
-                className={`flex items-center  font-medium gap-1  px-4 p-3 rounded-sm ${isAcive ? 'bg-green-800 text-white' : ''}`}
+                className={`flex items-center  font-medium gap-1 px-4 sm:px-4 p-3 rounded-sm ${isAcive ? 'bg-green-800 text-white' : ''}`}
               >
                 <Icon size={18} />
-             <span className='hidden sm:inline'>{nav.name}</span>
+             <span className='hidden sm:inline '>{nav.name}</span>
               </Link>
             );
           })}
