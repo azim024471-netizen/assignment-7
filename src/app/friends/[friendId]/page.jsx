@@ -5,6 +5,7 @@ import { FiArchive } from "react-icons/fi";
 import { RiDeleteBinLine } from "react-icons/ri";
 
 import InterActionsBtn from '@/components/InterActionsBtn/InterActionsBtn';
+import NotFound from '@/app/not-found';
 
 
 const FriendDetailsPage = async ({ params }) => {
@@ -15,7 +16,10 @@ const FriendDetailsPage = async ({ params }) => {
   
 
     const friend = friendsData.find((friend) => friend.id === Number(friendId))
-
+       if(!friend){
+        
+      return <NotFound></NotFound>
+       }
    
 
     const { name, picture, days_since_contact, bio, status, tags, email, goal, next_due_date } = friend;

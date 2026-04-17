@@ -42,7 +42,7 @@ const TimelinePage = () => {
              <div className="flex flex-col items-center justify-center py-20 bg-green-50 rounded-xl shadow-xl
               border-gray-200 space-y-5">          
             <h3 className="text-xl font-semibold text-gray-700">No History Found</h3>
-         <p className="text-gray-500 mt-2">You havenot had any  interactions yet.</p>
+         <p className="text-gray-500 mt-2">You have not had any  interactions yet.</p>
               </div>
                )
    }
