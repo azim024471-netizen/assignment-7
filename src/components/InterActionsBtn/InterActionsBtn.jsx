@@ -22,20 +22,14 @@ const InterActionsBtn = ({friend}) => {
             date : new Date().toDateString()
             
         }
-        //   console.log(friend.name, 'connected by', connetBy)
         
-            //   console.log(interActFriend)
-
           const upDateInterActions =[...interActions, interActFriend]
           setInterActions(upDateInterActions)
          toast.success(`${connetBy} with ${friend.name}`)
           
         }
         
-        // console.log(interActions)
-
-        // console.log(friend)
-   
+       
 
 
 

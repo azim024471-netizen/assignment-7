@@ -12,7 +12,7 @@ const Banner = () => {
         { value: '12', label: 'Interactions This Month' },
     ];
     return (
-        <div className='container mx-auto  pt-20'>
+        <div className='container mx-auto  '>
             <div className='text-center  '>
                 <div className=' space-y-4 mb-8'>
                     <h2 className='font-bold text-5xl'>Friends to keep close in your life</h2>

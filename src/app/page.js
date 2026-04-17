@@ -6,7 +6,7 @@ import FriendsSection from "@/components/FriendsSection/FriendsSection";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="py-10 md:py-20">
       
       
      <Banner> </Banner>

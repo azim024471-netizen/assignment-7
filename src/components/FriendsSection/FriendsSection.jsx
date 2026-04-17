@@ -2,11 +2,9 @@ import FriendCard from "./FriendCard";
 
 const FriendsSection = async () => {
 
-    const res = await fetch("http://localhost:3000/friendsData.json");
+    const res = await fetch("https://assignment-7-fawn-six.vercel.app//friendsData.json");
     const friendsData = await res.json()
-    // console.log(friendsData)
-
-
+    
     return (
         <div className='  container mx-auto'>
             <h3 className='font-semibold text-2xl mb-4 text-center md:text-left'>Your Friends</h3>

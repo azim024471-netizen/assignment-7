@@ -12,8 +12,3 @@ const SummaryCard = ({card}) => {
 
 export default SummaryCard;
 
-{/* <div 
-              key={index} 
-              className="bg-white    flex flex-col items-center justify-center 
-              "
-            ></div> */}

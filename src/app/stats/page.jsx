@@ -22,7 +22,7 @@ const StatsPage = () => {
   
 ];
     return (
-        <div className='container mx-auto p-10 bg-white min-h-screen'>
+        <div className='container mx-auto p-10 bg-white '>
 
               <h1 className='text-5xl   mb-8 '> This is stats page</h1>
 

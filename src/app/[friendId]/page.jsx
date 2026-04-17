@@ -10,7 +10,7 @@ import InterActionsBtn from '@/components/InterActionsBtn/InterActionsBtn';
 const FriendDetailsPage = async ({ params }) => {
     const { friendId } = await params
 
-    const res = await fetch("http://localhost:3000/friendsData.json");
+    const res = await fetch("https://assignment-7-fawn-six.vercel.app//friendsData.json");
     const friendsData = await res.json()
     // console.log(friendsData)
 
@@ -138,15 +138,3 @@ export default FriendDetailsPage;
 
 
 
-// {
-//     "id": 1,
-//     "name": "Arif Hasan",
-//     "picture": "https://randomuser.me/api/portraits/men/32.jpg",
-//     "email": "arif.hasan@gmail.com",
-//     "days_since_contact": 18,
-//     "status": "Overdue",
-//     "tags": ["COLLEGE", "CLOSE FRIEND"],
-//     "bio": "We studied together at Dhaka College and played cricket every weekend.",
-//     "goal": 14,
-//     "next_due_date": "2026-03-28"
-//   },
