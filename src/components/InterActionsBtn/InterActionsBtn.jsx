@@ -5,15 +5,13 @@ import { MdOutlineTextsms } from "react-icons/md";
 import { IoVideocamOutline } from "react-icons/io5";
 import { useContext } from "react";
 import { InteractionContext } from "@/context/interactionsContext";
+import { toast } from "react-toastify";
 
 
 
 const InterActionsBtn = ({friend}) => { 
 
     const {interActions, setInterActions} = useContext(InteractionContext) 
-
-     
-
 
     const handleInteraction =(connetBy)=> {
 
@@ -30,7 +28,7 @@ const InterActionsBtn = ({friend}) => {
 
           const upDateInterActions =[...interActions, interActFriend]
           setInterActions(upDateInterActions)
-
+         toast.success(`${connetBy} with ${friend.name}`)
           
         }
         
