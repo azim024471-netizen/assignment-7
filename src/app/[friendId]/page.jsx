@@ -12,11 +12,11 @@ const FriendDetailsPage = async ({ params }) => {
 
     const res = await fetch("https://assignment-7-fawn-six.vercel.app//friendsData.json");
     const friendsData = await res.json()
-    // console.log(friendsData)
+  
 
     const friend = friendsData.find((friend) => friend.id === Number(friendId))
 
-    // console.log(friend)
+   
 
     const { name, picture, days_since_contact, bio, status, tags, email, goal, next_due_date } = friend;
 

@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+#####  Keen Keeper  ####
 
-## Getting Started
+A modern web application to manage and track interactions with your friends. Stay connected and visualize your social activities in one place!
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### Technologies Ued To Build--->>>
+ @ Next.js (Framework)
+ @ React   (Library)
+ @ Tailwind CSS (Styling)
+ @ Recharts (Data Visualization)
+ @ React Toastify (Notifications)
+ @ 
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+##  Key Features
 
-To learn more about Next.js, take a look at the following resources:
+1.  Real-time Interaction Logging:  Use to record calls, texts, and video meetings with friends. Each interaction
+    is instantly saved and displayed on your timeline.
+2.  Dynamic Timeline Filtering: Easily filter your interaction history by type (Call, Text, or Video) to find
+    specific  memories or logs quickly.
+3.  Visual Statistics: A beautiful, interactive Pie Chart that provides a breakdown of your communication habits,  
+    helping you see how you spend time with your friends.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
